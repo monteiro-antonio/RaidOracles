@@ -1,0 +1,76 @@
+body {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+
+.header {
+    background-color: #112633;
+    color: white;
+    overflow: auto;
+    height: 10vh;
+    line-height: 10vh;
+    white-space: nowrap;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    list-style: none;
+    float: right;
+}
+
+.logo_cabecalho {
+    height: 10vh;
+    float: left;
+}
+
+.titulo {
+    margin: 0;
+    float: left;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.destaque {
+    color: #989898;
+}
+
+a:hover {
+    transition: 0.5s;
+    color: #989898;
+}
+
+.header .navbar li {
+    float: left;
+    margin-left: 13px;
+    text-transform: uppercase;
+    line-height: 8vh;
+    white-space: nowrap;
+}
+
+/* Campo da tela */
+
+.tela_inteira {
+    height: 85vh;
+    background-image: url(Imagens/tela_inicial.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Rodapé */
+
+.rodape {
+    height: 10vh;
+    background-color: #112633;
+}
