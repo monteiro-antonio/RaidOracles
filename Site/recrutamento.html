@@ -15,7 +15,7 @@
     <link rel="mask-icon" href="Imagens/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>Raid Oracles</title>
+    <title>Raid Oracles - Recrutamento</title>
 </head>
 
 <body>
@@ -29,27 +29,79 @@
             <div class="cabecalho_esquerda">
                 <a href="index.html">
                     <img src="Imagens/Raid_Oracles.png" alt="logo do clã" class="logo_cabecalho">
-                    <h1 class="titulo">Raid Oracles</h1>
+                    <h1 class="titulo">Raid Oracles | Recrutamento</h1>
                 </a>
             </div>
 
 
             <ul class="navbar">
-                <li><span class="destaque">Home</span></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="https://www.bungie.net/pt-br/ClanV2?groupid=4036170">Sobre</a></li>
                 <li><a href="https://www.bungie.net/pt-br">Destiny</a></li>
-                <li><a href="recrutamento.html">Recrutamento</a></li>
+                <li><span class="destaque">Recrutamento</span></li>
             </ul>
+
+        </div>
 
     </header>
 
-    </div>
-
     <!-- Tela Inteira -->
 
-    <div class="tela_inteira">
+    <div class="recrutamento">
+
+        <div class="campos_cadastro">
+
+            <select id="plataforma">
+                <option value="" disabled selected>Selecione a sua plataforma</option>
+                <option value="PS">Playstation</option>
+                <option value="XL">Xbox Live</option>
+                <option value="PC">Steam</option>
+            </select>
+            <br>
+
+            <input type="text" id="login" placeholder="ID - Plataforma selecionada">
+            <br>
+            <input type="text" id="login" placeholder="ID - bungie.net">
+            <br>
+
+            <div class="classes">
+
+                <span class="classe">Selecione as classes que você joga:</span>
+                <br>
+
+                <div class="arcano">
+                    <label>
+                        <input type="checkbox" id="arcano" name="classe" value="warlock">
+                        Arcano
+                    </label>
+                </div>
+
+                <div class="cacador">
+                    <label>
+                        <input type="checkbox" id="cacador" name="classe" value="hunter">
+                        Caçador
+                    </label>
+                </div>
+
+                <div class="tita">
+                    <label>
+                        <input type="checkbox" id="tita" name="classe" value="titan">
+                        Titã
+                    </label>
+                </div>
+
+            </div>
+            <br>
+
+            <button id="concluir" onclick="enviar_dados()">
+                Enviar
+            </button>
+
+
+        </div>
 
     </div>
+
 
     <!-- Rodapé -->
 
@@ -57,18 +109,21 @@
 
         <div class="discord"><a href="https://discord.gg/Hb9HuAz" target="_blank">
                 <img src="Imagens/discord.png" alt="discord" class="footer_icons">
+
                 Entre no nosso discord
             </a>
         </div>
 
         <div class="bungie"><a href="https://www.bungie.net/pt-br/ClanV2?groupid=4036170" target="_blank">
                 <img src="Imagens/bungie_edit.png" alt="bungie" class="footer_icons">
+
                 Entre no nosso clã
             </a>
         </div>
 
         <div class="destiny"><a href="https://www.bungie.net/pt-br" target="_blank">
                 <img src="Imagens/destiny_logo.png" alt="destiny" class="footer_icons">
+
                 Destiny 2
             </a>
         </div>

@@ -1,3 +1,5 @@
+/* -------------------------- PADRÃO -------------------------- */
+
 body {
     font-family: 'Exo 2', sans-serif;
     margin: 0;
@@ -6,28 +8,39 @@ body {
 
 /* Cabeçalho */
 
-.header {
+header {
     background-color: #112633;
     color: white;
-    overflow: auto;
     height: 10vh;
     line-height: 10vh;
-    white-space: nowrap;
 }
 
 .container {
     width: 90%;
-    margin: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
 }
 
 .navbar {
+    height: 10vh;
+    align-items: center;
+    position: absolute;
+    right: 2vw;
+    margin: 0;
     list-style: none;
-    float: right;
+    display: flex;
 }
 
 .logo_cabecalho {
-    height: 10vh;
+    height: 9vh;
     float: left;
+}
+
+.cabecalho_esquerda {
+    position: absolute;
+    left: 2vw;
 }
 
 .titulo {
@@ -38,6 +51,8 @@ body {
 
 a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
     color: white;
 }
 
@@ -62,7 +77,7 @@ a:hover {
 
 .tela_inteira {
     height: 85vh;
-    background-image: url(Imagens/tela_inicial.png);
+    background-image: url(Imagens/entrada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -70,7 +85,155 @@ a:hover {
 
 /* Rodapé */
 
-.rodape {
-    height: 10vh;
+footer {
+    height: 5vh;
     background-color: #112633;
+    display: flex;
+    color: white;
+    align-items: center;
 }
+
+.footer_icons {
+    height: 3vh;
+    margin-right: 0.2vw;
+}
+
+.discord {
+    margin-left: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.bungie {
+    margin-left: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.destiny {
+    margin-left: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.lema {
+    font-size: x-large;
+    margin-left: 55vw;
+    display: flex;
+    align-items: center;
+}
+
+
+/* -------------------------- PADRÃO -------------------------- */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -------------------------- PÁGINA INICIAL -------------------------- */
+
+
+
+
+
+
+
+/* -------------------------- PÁGINA INICIAL -------------------------- */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -------------------------- PÁGINA DE RECRUTAMENTO -------------------------- */
+
+/* Recrutamento */
+
+.recrutamento {
+    height: 85vh;
+    background-image: url(Imagens/recrutamento.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.campos_cadastro {
+    height: 70vh;
+    width: 30vw;
+    margin-right: 20vh;
+    margin-top: 7.5vh;
+    border-radius: 2%;
+    background-color: #112633;
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+    font-size: large;
+}
+
+select {
+    margin-top: 4vh;
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    background-color: #4F7175;
+    color: white;
+    padding: 1vh 1vw;
+    text-align-last: center;
+}
+
+input {
+    margin-top: 4vh;
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    background-color: #4F7175;
+    color: white;
+    padding: 1vh 1vw;
+    text-align-last: center;
+}
+
+.arcano {
+    display: flex;
+    margin-left: 5vw;
+}
+
+.cacador {
+    display: flex;
+    margin-left: 5vw;
+}
+
+.tita {
+    display: flex;
+    margin-left: 5vw;
+}
+
+::placeholder {
+    color: white;
+    text-align: center;
+}
+
+button {
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    padding: 1vh 1vw;
+    background-color: #4F7175;
+    border-width: 0;
+    border-radius: 10%;
+    color: white;
+    cursor: pointer;   
+}
+
+.classes {
+    padding: 1vh 1vw;
+    height: 26vh;
+    width: 15vw;
+    margin-top: 4vh;
+    margin-bottom: -2vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+    background-color: #4F7175;
+    fill-opacity: 0.5;
+    color: white;
+    text-align: center;
+    line-height: 4vh;
+    font-size: large;
+}
+
+/* -------------------------- PÁGINA DE RECRUTAMENTO -------------------------- */
