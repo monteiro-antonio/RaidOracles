@@ -27,7 +27,7 @@
         <div class="container">
 
             <div class="cabecalho_esquerda">
-                <a href="index.html">
+                <a href="index_convite.html">
                     <img src="Imagens/Raid_Oracles.png" alt="logo do clã" class="logo_cabecalho">
                     <h1 class="titulo">Raid Oracles | Recrutamento</h1>
                 </a>
@@ -35,9 +35,9 @@
 
 
             <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://www.bungie.net/pt-br/ClanV2?groupid=4036170">Sobre</a></li>
-                <li><a href="https://www.bungie.net/pt-br">Destiny</a></li>
+                <li><a href="index_convite.html">Home</a></li>
+                <li><a href="index_hunter.html">Classes</a></li>
+                <li><a href="index_vog.html">Atividades</a></li>
                 <li><span class="destaque">Recrutamento</span></li>
             </ul>
 
@@ -51,7 +51,7 @@
 
         <div class="campos_cadastro">
 
-            <select id="plataforma">
+            <select id="plataforma" required onchange="plat()">
                 <option value="" disabled selected>Selecione a sua plataforma</option>
                 <option value="PS">Playstation</option>
                 <option value="XL">Xbox Live</option>
@@ -59,9 +59,9 @@
             </select>
             <br>
 
-            <input type="text" id="login" placeholder="ID - Plataforma selecionada">
+            <input type="text" id="nome" placeholder="Como quero ser chamado">
             <br>
-            <input type="text" id="login" placeholder="ID - bungie.net">
+            <input type="text" id="login" placeholder="ID (PSN, Gamertag, Steam)" required>
             <br>
 
             <div class="classes">
