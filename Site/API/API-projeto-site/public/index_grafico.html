@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="Imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16x16.png">
+    <link rel="manifest" href="Imagens/site.webmanifest">
+    <link rel="mask-icon" href="Imagens/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Raid Oracles</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+
+</head>
+
+<body onload="obter_grafico()">
+
+    <!-- Cabeçalho -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="cabecalho_esquerda">
+                <a href="index_convite.html">
+                    <img src="Imagens/Raid_Oracles.png" alt="logo do clã" class="logo_cabecalho">
+                    <h1 class="titulo">Raid Oracles</h1>
+                </a>
+            </div>
+
+
+            <ul class="navbar">
+                <li><a href="index_convite.html">Home</a></li>
+                <li><span class="destaque">Classes</span></li>
+                <li><a href="index_vog.html">Atividades</a></li>
+                <li><a href="recrutamento.html">Recrutamento</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+    </header>
+
+    </div>
+
+    <!-- Tela Inteira -->
+
+    <div class="tela_inteira">
+
+        <div class="meio">
+
+            <div class="esquerda">
+                <a href="index_warlock.html"><img src="Imagens/left-arrow.png" alt="seta para esquerda"
+                        class="arrow_left"></a>
+            </div>
+
+            <div class="presentation">
+
+                <div class="grafico">
+
+                    <canvas id="myChart"></canvas>
+
+                </div>
+
+            </div>
+
+            <div class="direita">
+                <a href="index_vog.html"><img src="Imagens/right-arrow.png" alt="seta para esquerda"
+                        class="arrow_right"></a>
+            </div>
+
+        </div>
+
+        <div class="div_botao">
+            <a href="recrutamento.html">
+                <button id="button_recruit">
+                    Jogue conosco!
+                </button>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+
+    <footer class="rodape">
+
+        <div class="discord"><a href="https://discord.gg/Hb9HuAz" target="_blank">
+                <img src="Imagens/discord.png" alt="discord" class="footer_icons">
+                Entre no nosso discord
+            </a>
+        </div>
+
+        <div class="bungie"><a href="https://www.bungie.net/pt-br/ClanV2?groupid=4036170" target="_blank">
+                <img src="Imagens/bungie_edit.png" alt="bungie" class="footer_icons">
+                Entre no nosso clã
+            </a>
+        </div>
+
+        <div class="destiny"><a href="https://www.bungie.net/pt-br" target="_blank">
+                <img src="Imagens/destiny_logo.png" alt="destiny" class="footer_icons">
+                Destiny 2
+            </a>
+        </div>
+
+        <div class="lema">
+            "Em busca da Raid perfeita."
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+
+    function obter_grafico() {
+        fetch("/grafico/graficos", {
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(function (resposta) {
+
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+
+                    var hunter;
+                    var titan;
+                    var warlock;
+
+
+                    hunter = resposta[0].hunter;
+                    titan = resposta[0].titan;
+                    warlock = resposta[0].warlock;
+
+                    console.log(`Hunter: ${hunter}; Titan: ${titan}; Warlock: ${warlock}`);
+
+                    var ctx = document.getElementById('myChart');
+
+
+                    var meuGrafico = new Chart(ctx, {
+                        type: 'pie',
+
+                        data: {
+                            datasets: [{
+                                data: [hunter, titan, warlock],
+                                backgroundColor: ['#1E3EC7', '#D61D30', '#FFEB22']
+                            }],
+
+                            labels: ['CAÇADOR', 'TITÃ', 'ARCANO']
+                        },
+
+                        options: {
+
+                            responsive: true,
+
+                            title: {
+                                display: true,
+                                text: 'DISTRIBUIÇÃO DAS CLASSES',
+                                fontSize: 30
+                            },
+
+                            legend: {
+                                display: true,
+                                reverse: true,
+                                position: 'bottom',
+                                labels: {
+                                    fontSize: 20,
+                                }
+                            },
+
+                        }
+
+                    })
+
+                    Chart.defaults.global.defaultFontColor = "#ffffff";
+                    Chart.defaults.global.defaultFontFamily = "Trebuchet MS";
+
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+</script>

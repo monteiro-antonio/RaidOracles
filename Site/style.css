@@ -491,3 +491,78 @@ button {
 }
 
 /* -------------------------- PÁGINA DE RECRUTAMENTO -------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -------------------------- PÁGINA DE LOGIN -------------------------- */
+
+/* Recrutamento */
+
+.login {
+    height: 85vh;
+    background-image: url(Imagens/guardioes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 30%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.campos_login {
+    height: 40vh;
+    width: 30vw;
+    margin-left: 20vh;
+    margin-top: 15vh;
+    border-radius: 5px;
+    background-color: rgba(17, 38, 51, 0.9);
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+    font-size: large;
+}
+
+select {
+    margin-top: 4vh;
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    background-color: #4F7175;
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+    text-align-last: center;
+}
+
+input {
+    margin-top: 4vh;
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    background-color: #4F7175;
+    border: none;
+    color: white;
+    padding: 1vh 1vw;
+    text-align-last: center;
+}
+
+
+::placeholder {
+    color: white;
+    text-align: center;
+}
+
+button {
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    padding: 1vh 1vw;
+    background-color: #4F7175;
+    border-width: 0;
+    border-radius: 10%;
+    color: white;
+    cursor: pointer;   
+}
+
+#concluir {
+    margin-top: 4vh;
+}
+
+/* -------------------------- PÁGINA DE LOGIN -------------------------- */
