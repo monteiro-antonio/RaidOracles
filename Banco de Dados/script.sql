@@ -33,3 +33,21 @@ select
 (select count(hunter) from guardiao where hunter = 1) as hunter,
 (select count(titan) from guardiao where titan = 1) as titan,
 (select count(warlock) from guardiao where warlock = 1) as warlock;
+
+select * from guardiao;
+
+create table publicacao (
+id int primary key auto_increment,
+fkClan int,
+foreign key (fkClan) references guardiao (idClan),
+descricao varchar(280)
+);
+
+
+SELECT 
+    guardiao.idGuardian,
+    descricao
+    FROM publicacao
+    INNER JOIN guardiao
+    ON Publicacao.fkClan = guardiao.idClan
+    ORDER BY publicacao.id DESC;
