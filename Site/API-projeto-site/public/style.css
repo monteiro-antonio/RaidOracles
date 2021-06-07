@@ -510,10 +510,11 @@ button {
 }
 
 .campos_login {
-    height: 40vh;
+    height: 35vh;
     width: 30vw;
     margin-left: 20vh;
     margin-top: 15vh;
+    padding-top: 2vh;
     border-radius: 5px;
     background-color: rgba(17, 38, 51, 0.9);
     color: white;
@@ -521,6 +522,7 @@ button {
     line-height: 5vh;
     font-size: large;
 }
+
 
 select {
     margin-top: 4vh;
@@ -561,9 +563,10 @@ button {
     cursor: pointer;   
 }
 
-#concluir {
+#botao_entrar {
     margin-top: 4vh;
 }
+
 
 /* -------------------------- PUBLICAÇÕES -------------------------- */
 

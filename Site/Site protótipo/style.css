@@ -1,0 +1,575 @@
+/* -------------------------- PADRÃO -------------------------- */
+
+body {
+    font-family: 'Exo 2', 'sans-serif';
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #112633;
+    color: white;
+    height: 10vh;
+    line-height: 10vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.navbar {
+    height: 10vh;
+    align-items: center;
+    position: absolute;
+    right: 2vw;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.logo_cabecalho {
+    height: 9vh;
+    float: left;
+}
+
+.cabecalho_esquerda {
+    position: absolute;
+    left: 2vw;
+}
+
+.titulo {
+    margin: 0;
+    float: left;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.destaque {
+    color: #989898;
+}
+
+a:hover {
+    transition: 0.5s;
+    color: #989898;
+}
+
+.header .navbar li {
+    float: left;
+    margin-left: 13px;
+    text-transform: uppercase;
+    line-height: 8vh;
+    white-space: nowrap;
+}
+
+
+/* Rodapé */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 5vh;
+    background-color: #112633;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.footer_icons {
+    height: 3vh;
+    margin-right: 0.2vw;
+}
+
+.discord {
+    margin-left: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.bungie {
+    margin-left: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.destiny {
+    margin-left: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.lema {
+    font-size: x-large;
+    margin-left: 55vw;
+    display: flex;
+    align-items: center;
+}
+
+
+/* -------------------------- PADRÃO -------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------- INDEX -------------------------- */
+
+
+/* Campo da tela */
+
+.tela_inteira {
+    height: 85vh;
+    background-image: url(Imagens/entrada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+}
+
+/* -------------------------- APRESENTAÇÃO -------------------------- */
+
+.presentation {
+    position: absolute;
+    right: 10vw;
+    left: 10vw;
+    margin-top: 5vh;
+    height: 70vh;
+    width: 79.48333333333333vw;
+    background-color: rgba(17, 38, 51, 0.7);
+    border-radius: 50px;
+    box-sizing: border-box;
+    align-self: center;
+    justify-self: center;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #112633;
+}
+
+.destiny_title {
+    margin-top: 5vh;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.txt_destiny {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.clan_title {
+    margin-top: 10vh;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.clan_motto {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.txt_clan {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.meio {
+    display: inline-block;
+}
+
+.esquerda {
+    position: absolute;
+    left: 0;
+    height: 70vh;
+    margin-top: 5vh;
+    width: 10vw;
+}
+
+.direita {
+    position: absolute;
+    right: 0;
+    height: 70vh;
+    margin-top: 5vh;
+    width: 10vw;
+}
+
+.arrow_left {
+    position: absolute;
+    height: 5vh;
+    left: 5vw;
+    top: 32.5vh;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(218deg) brightness(102%) contrast(101%);
+}
+
+.arrow_right {
+    position: absolute;
+    height: 5vh;
+    right: 5vw;
+    top: 32.5vh;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(218deg) brightness(102%) contrast(101%);
+}
+
+
+/* -------------------------- APRESENTAÇÃO -------------------------- */
+
+/* -------------------------- CLASSES -------------------------- */
+
+.hunter {
+    border-radius: 50px;
+    object-fit: cover;
+    height: 70vh;
+    width: 79.48333333333333vw;
+    overflow: auto;
+}
+
+.titan {
+    border-radius: 50px;
+    object-fit: cover;
+    height: 70vh;
+    width: 79.48333333333333vw;
+    overflow: auto;
+}
+
+.warlock {
+    border-radius: 50px;
+    object-fit: cover;
+    height: 70vh;
+    width: 79.48333333333333vw;
+    overflow: auto;
+}
+
+
+/* -------------------------- CLASSES -------------------------- */
+
+.convite {
+    border-radius: 50px;
+    object-fit: cover;
+    height: 70vh;
+    width: 79.48333333333333vw;
+    overflow: auto;
+}
+
+.div_convite {
+    margin-top: 5vh;
+    width: 100vw;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+}
+
+.titulo_convite {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* -------------------------- ATIVIDADES -------------------------- */
+
+video {
+    object-fit: cover;
+    object-position: center;
+    height: 70vh;
+    width: 79.48333333333333vw;
+    border-radius: 50px;
+}
+
+.div_video {
+    margin-top: 5vh;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.div_titulo {
+    margin-top: 5vh;
+    width: 100vw;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+}
+
+.vog {
+    color: #112633;
+    text-align: center;
+}
+
+.div_botao {
+    position: absolute;
+    bottom: 5vh;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#button_recruit {
+    font-size: x-large;
+    border-radius: 25px;
+    text-align: center;
+    text-justify: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    background-color: #112633;
+}
+
+.div_crisol {
+    margin-top: 5vh;
+    width: 100vw;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+}
+
+.crisol {
+    color: #ffffff;
+    text-align: center;
+}
+
+.div_gambit {
+    margin-top: 5vh;
+    width: 100vw;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+}
+
+.gambit {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* -------------------------- ATIVIDADES -------------------------- */
+
+/* -------------------------- INDEX -------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------- GRÁFICO -------------------------- */
+
+.titulo_grafico {
+    color: white;
+    text-align: center;
+}
+
+#myChart {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.grafico {
+    margin: 0 auto;
+    padding: 10px;
+    width: 60vw;
+}
+
+
+
+
+/* -------------------------- GRÁFICO -------------------------- */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -------------------------- PÁGINA DE RECRUTAMENTO -------------------------- */
+
+/* Recrutamento */
+
+.recrutamento {
+    height: 85vh;
+    background-image: url(Imagens/recrutamento.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.campos_cadastro {
+    height: 70vh;
+    width: 30vw;
+    margin-right: 20vh;
+    margin-top: 7.5vh;
+    border-radius: 5px;
+    background-color: rgba(17, 38, 51, 0.9);
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+    font-size: large;
+}
+
+select {
+    margin-top: 4vh;
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    background-color: #4F7175;
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+    text-align-last: center;
+}
+
+input {
+    margin-top: 4vh;
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    background-color: #4F7175;
+    border: none;
+    color: white;
+    padding: 1vh 1vw;
+    text-align-last: center;
+}
+
+.arcano {
+    display: flex;
+    margin-left: 5vw;
+}
+
+.cacador {
+    display: flex;
+    margin-left: 5vw;
+}
+
+.tita {
+    display: flex;
+    margin-left: 5vw;
+}
+
+::placeholder {
+    color: white;
+    text-align: center;
+}
+
+button {
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    padding: 1vh 1vw;
+    background-color: #4F7175;
+    border-width: 0;
+    border-radius: 10%;
+    color: white;
+    cursor: pointer;   
+}
+
+.classes {
+    padding: 1vh 1vw;
+    height: 26vh;
+    width: 15vw;
+    margin-top: 4vh;
+    margin-bottom: -2vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: #4F7175;
+    fill-opacity: 0.5;
+    color: white;
+    text-align: center;
+    line-height: 4vh;
+    font-size: large;
+}
+
+/* -------------------------- PÁGINA DE RECRUTAMENTO -------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -------------------------- PÁGINA DE LOGIN -------------------------- */
+
+/* Recrutamento */
+
+.login {
+    height: 85vh;
+    background-image: url(Imagens/guardioes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 30%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.campos_login {
+    height: 40vh;
+    width: 30vw;
+    margin-left: 20vh;
+    margin-top: 15vh;
+    border-radius: 5px;
+    background-color: rgba(17, 38, 51, 0.9);
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+    font-size: large;
+}
+
+select {
+    margin-top: 4vh;
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    background-color: #4F7175;
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+    text-align-last: center;
+}
+
+input {
+    margin-top: 4vh;
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    background-color: #4F7175;
+    border: none;
+    color: white;
+    padding: 1vh 1vw;
+    text-align-last: center;
+}
+
+
+::placeholder {
+    color: white;
+    text-align: center;
+}
+
+button {
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+    padding: 1vh 1vw;
+    background-color: #4F7175;
+    border-width: 0;
+    border-radius: 10%;
+    color: white;
+    cursor: pointer;   
+}
+
+#concluir {
+    margin-top: 4vh;
+}
+
+/* -------------------------- PUBLICAÇÕES -------------------------- */
+
+
+
+
+
+
+/* -------------------------- PUBLICAÇÕES -------------------------- */
