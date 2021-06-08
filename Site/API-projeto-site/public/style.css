@@ -111,7 +111,7 @@ footer {
 }
 
 .lema {
-    font-size: x-large;
+    font-size: medium;
     margin-left: 55vw;
     display: flex;
     align-items: center;
@@ -160,13 +160,13 @@ footer {
 .destiny_title {
     margin-top: 5vh;
     color: white;
-    font-size: xx-large;
+    font-size: xmedium;
     text-align: center;
 }
 
 .txt_destiny {
     color: white;
-    font-size: x-large;
+    font-size: medium;
     text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -175,19 +175,19 @@ footer {
 .clan_title {
     margin-top: 10vh;
     color: white;
-    font-size: xx-large;
+    font-size: xmedium;
     text-align: center;
 }
 
 .clan_motto {
     color: white;
-    font-size: x-large;
+    font-size: medium;
     text-align: center;
 }
 
 .txt_clan {
     color: white;
-    font-size: x-large;
+    font-size: medium;
     text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -324,7 +324,7 @@ video {
 }
 
 #button_recruit {
-    font-size: x-large;
+    font-size: medium;
     border-radius: 25px;
     text-align: center;
     text-justify: center;
@@ -417,13 +417,13 @@ video {
     color: white;
     text-align: center;
     line-height: 5vh;
-    font-size: large;
+    font-size: medium;
 }
 
 select {
     margin-top: 4vh;
     font-family: 'Exo 2', sans-serif;
-    font-size: large;
+    font-size: medium;
     background-color: #4F7175;
     color: white;
     border: none;
@@ -434,7 +434,7 @@ select {
 input {
     margin-top: 4vh;
     font-family: 'Exo 2', sans-serif;
-    font-size: large;
+    font-size: medium;
     background-color: #4F7175;
     border: none;
     color: white;
@@ -464,7 +464,7 @@ input {
 
 button {
     font-family: 'Exo 2', sans-serif;
-    font-size: large;
+    font-size: medium;
     padding: 1vh 1vw;
     background-color: #4F7175;
     border-width: 0;
@@ -487,7 +487,7 @@ button {
     color: white;
     text-align: center;
     line-height: 4vh;
-    font-size: large;
+    font-size: medium;
 }
 
 /* -------------------------- PÁGINA DE RECRUTAMENTO -------------------------- */
@@ -520,14 +520,14 @@ button {
     color: white;
     text-align: center;
     line-height: 5vh;
-    font-size: large;
+    font-size: medium;
 }
 
 
 select {
     margin-top: 4vh;
     font-family: 'Exo 2', sans-serif;
-    font-size: large;
+    font-size: medium;
     background-color: #4F7175;
     color: white;
     border: none;
@@ -538,7 +538,7 @@ select {
 input {
     margin-top: 4vh;
     font-family: 'Exo 2', sans-serif;
-    font-size: large;
+    font-size: medium;
     background-color: #4F7175;
     border: none;
     color: white;
@@ -554,7 +554,7 @@ input {
 
 button {
     font-family: 'Exo 2', sans-serif;
-    font-size: large;
+    font-size: medium;
     padding: 1vh 1vw;
     background-color: #4F7175;
     border-width: 0;
@@ -606,6 +606,7 @@ button {
     padding: 5px;
     text-align: left;
     margin-bottom: 10px;
+    margin-right: 0.5%;
 }
 
 .nome {
@@ -625,6 +626,29 @@ button {
     height: 26vh;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.feed {
+    position: absolute;
+    top: 50vh;
+    bottom: 50vh;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 20px; 
+}
+
+::-webkit-scrollbar-button{
+    height: 0.1px;
+}
+::-webkit-scrollbar-track {
+    background-color: #B1B1B1;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #555555;
+    border-radius: 3px;
 }
 
 /* -------------------------- PUBLICAÇÕES -------------------------- */
