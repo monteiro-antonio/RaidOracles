@@ -160,13 +160,13 @@ footer {
 .destiny_title {
     margin-top: 5vh;
     color: white;
-    font-size: xmedium;
+    font-size: xx-large;
     text-align: center;
 }
 
 .txt_destiny {
     color: white;
-    font-size: medium;
+    font-size: x-large;
     text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -175,19 +175,19 @@ footer {
 .clan_title {
     margin-top: 10vh;
     color: white;
-    font-size: xmedium;
+    font-size: xx-large;
     text-align: center;
 }
 
 .clan_motto {
     color: white;
-    font-size: medium;
+    font-size: x-large;
     text-align: center;
 }
 
 .txt_clan {
     color: white;
-    font-size: medium;
+    font-size: x-large;
     text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -382,7 +382,7 @@ video {
 
 .grafico {
     margin: 0 auto;
-    padding: 10px;
+    /* padding: 10px; */
     width: 60vw;
 }
 
